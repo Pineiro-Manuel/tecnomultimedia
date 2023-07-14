@@ -10,7 +10,7 @@ void setup() {
   size(600, 600);
   rectMode(CENTER);
   texto = loadStrings("MiTexto.txt"); 
-  imagenes = new PImage[12]; // Establece el tamaño del arreglo
+  imagenes = new PImage[12]; 
 
   for (int i = 0; i <12; i++) {
     texto[i] = texto[i].replaceAll("\\\\n", "\n");
@@ -37,10 +37,26 @@ if (pantalla == 0) {
   }
   else if (pantalla == 1) {
     text(texto[pantalla], 15,15);      
- dibujarBoton("circ", width/40, height/2, 30, 1, "    Siguiente");
+ dibujarBoton("circ", width/40, height/2, 30, 2, "    Siguiente");
   }
   if (pantalla == 2) {
     text(texto[pantalla], 15,15);      
- dibujarBoton("circ", width/40, height/2, 30, 1, "    Siguiente");
+ dibujarBoton("circ", width/40, height/2, 30, 3, "    Siguiente");
+  }
+  if (pantalla == 3) {
+    text(texto[pantalla], 15,15);      
+ dibujarBoton("circ", width/40, height/2, 30, 4, "    Siguiente");
+  }
+  if (pantalla == 4) {
+    text(texto[pantalla], 15,15);      
+ dibujarBoton("circ", width/40, height/2, 30, 5, "    Siguiente");
+  }
+  if (pantalla == 5) {
+    text(texto[pantalla], 15,15);      
+ dibujarBoton("circ", width/40, height/2, 30, 6, "    A:Intentar alagar al genio");
+  }
+  if (pantalla == 6) {
+    text(texto[pantalla], 15,15);      
+ dibujarBoton("circ", width/40, height/2, 30, 7, "    Siguiente");
   }
   }
