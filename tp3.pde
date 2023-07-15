@@ -1,5 +1,6 @@
 //TP3 de Manuel Piñeiro
 //Legajo: 94736/1
+//Link del video: https://www.youtube.com/watch?v=Co4awcc6BHU
 int pantalla = 0;
 boolean on;
 PImage[] imagenes;
@@ -33,30 +34,53 @@ void dibujarPantallas() {
  
 if (pantalla == 0) {
     text(texto[pantalla], 15,15);      
- dibujarBoton("circ", width/20, height/2, 30, 1, "   Comenzar");
-  }
-  else if (pantalla == 1) {
+ dibujarBoton("circ", width/20, height/1-60, 25, 1, "   Comenzar");
+ dibujarBoton("cuad", width/20, height/1-30, 25, 11, "   Creditos");
+}
+ if (pantalla == 1) {
     text(texto[pantalla], 15,15);      
- dibujarBoton("circ", width/40, height/2, 30, 2, "    Siguiente");
+ dibujarBoton("circ", width/40, height/1-60, 30, 2, "    Siguiente");
   }
   if (pantalla == 2) {
     text(texto[pantalla], 15,15);      
- dibujarBoton("circ", width/40, height/2, 30, 3, "    Siguiente");
+ dibujarBoton("circ", width/40, height/1-60, 30, 3, "    Siguiente");
   }
   if (pantalla == 3) {
     text(texto[pantalla], 15,15);      
- dibujarBoton("circ", width/40, height/2, 30, 4, "    Siguiente");
+ dibujarBoton("circ", width/40, height/1-60, 30, 4, "    Siguiente");
   }
   if (pantalla == 4) {
     text(texto[pantalla], 15,15);      
- dibujarBoton("circ", width/40, height/2, 30, 5, "    Siguiente");
+ dibujarBoton("circ", width/40, height/1-60, 30, 5, "    Siguiente");
   }
-  if (pantalla == 5) {
+  if (pantalla == 5) { //Pantalla de desiciones 
     text(texto[pantalla], 15,15);      
- dibujarBoton("circ", width/40, height/2, 30, 6, "    A:Intentar alagar al genio");
-  }
+ dibujarBoton("circ", width/40, height/1-90, 30, 6, "    A:Intentar Halagar al genio");
+ dibujarBoton("circ", width/40, height/1-60, 30, 9, "    B:Morir de la forma mas genial");
+ dibujarBoton("circ", width/40, height/1-30, 30, 10, "    C:Salir Corriendo");
+}
   if (pantalla == 6) {
     text(texto[pantalla], 15,15);      
- dibujarBoton("circ", width/40, height/2, 30, 7, "    Siguiente");
+ dibujarBoton("circ",  width/40, height/1-60, 30, 7, "    Siguiente");
   }
+  if (pantalla == 7) {
+    text(texto[pantalla], 15,15);      
+ dibujarBoton("circ",  width/40, height/1-60, 30, 8, "    Siguiente");
+  } 
+ if (pantalla == 8) {
+    text(texto[pantalla], 15,15);      
+ dibujarBoton("circ",  width/40, height/1-60, 30, 0, "    Reintentar");
+  } 
+ if (pantalla == 9) { //B
+    text(texto[pantalla], 15,15);      
+ dibujarBoton("circ",  width/40, height/1-60, 30, 0, "    Reintentar");
+  } 
+ if (pantalla == 10) { //C
+    text(texto[pantalla], 15,15);      
+ dibujarBoton("circ",  width/40, height/1-60, 30, 0, "    Reintentar");
   }
+  if (pantalla == 11) {
+    text(texto[pantalla], 15,15);      
+ dibujarBoton("circ",  width/40, height/1-60, 30, 0, "    Menu Principal");
+  } 
+}
