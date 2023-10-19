@@ -1,7 +1,7 @@
 //Manuel Piñeiro
 //Legajo: 94736/1
 //La precuela del pescador y el Genio
-//Link: 
+//Link: hacer el video
 
 let juego
 
