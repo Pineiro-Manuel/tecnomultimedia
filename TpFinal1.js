@@ -19,3 +19,11 @@ function draw() {
 function mouseClicked() {
   miAventura.cambiarEstado()
 }
+
+function keyPressed(){
+    juego.keyPressed()
+}
+
+function keyReleased(){
+    juego.keyReleased()()
+}
